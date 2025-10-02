@@ -1,8 +1,7 @@
 import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import ModDetails from "./components/ModDetails";
+import ScreenRecorder from "./components/ScreenRecorder";
 import Header from "./components/Header";
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mod/:modId" element={<ModDetails />} />
+          <Route path="/" element={<ScreenRecorder />} />
         </Routes>
       </BrowserRouter>
     </div>
